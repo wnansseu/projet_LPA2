@@ -1,0 +1,13 @@
+language: ruby
+rvm:
+- 2.0.0
+- 1.9.3
+- jruby-19mode
+- rbx-2
+deploy:
+  provider: heroku
+  api_key:
+    secure: NmicA68YwoAr0HYsENfPksWVXMcaZD8euoAwIQQmRgZff1Uz9J+IZaXSK/kdujcfqmZEDRreL/VIXR515CMzG4ajmaeEPOUjAjgyPCt8wGYSOZTE/Scv9+GeC6pOa5aGqTIcPi5w4h6DijrStZPys//QiUv0V4E5FRkYf/iCeV9XIHXrvrkO/hG9qNp8szYFuCGgm7iPrKrpZXdkg5mqoNU5JLvJcaVQnTtZtE5+A+Z6bNC0+mUE9OG3v1JeMq+i3HeEGkedt3QF4nTv5iSg32qAOhWpJco36jQ9NnptdlPV2IaqDztyakdzE2bcNFNHMN3FCJeszr4pKWZjO2A/+VbyxEY24VKVvyZ8eK+ieRQIh+yHFbILuq8nKG80aT9s6BXSs/r+QEFbfnvpHG3vz4e1QK1pBkWTOSwG19/8UKSsqGi+1BDtpMCMt5Em/OIvuGs9epoWrbamW3twrRRWTtGv1C3rpYSDS1EAqRIMtbhmGUlv7g5X9RLeZOJaeISthNnGHzKjA+wlsnSvFy1WWS/7m0DfXuyCaOLQdkRLIpDjBDI6yTLdDdqYhzbgR9c2gMhUlJia2/5F+jTL1izRpCXAoWs4QSCH60MC9YIR15Ih1IxedPESik3oPi1xpjhffUQ/OFWJM2yvKDA54FjOtptyb4rYCfIX/dKMyuNpphE=
+  app: blooming-coast-19545
+  on:
+    repo: wnansseu/projet_LPA2
