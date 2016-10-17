@@ -11,7 +11,7 @@ class City < ActiveRecord::Base
     results[:summary] = forecast.currently.summary
     results[:windSpeed] = forecast.currently.windSpeed
 	  results
-end 
+	end 
      
   def geocode
     places = Nominatim.search.city(self.name).limit(1)
