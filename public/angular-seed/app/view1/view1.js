@@ -13,8 +13,8 @@ angular.module('myApp.view1', ['ngRoute'])
   .controller('View1Ctrl', ['$scope', '$http', function($scope, $http) {
    
 
-   var student = $http('/students/:id.json', {studentId:'@id'}) //Creation de la ressource
-$scope.students = student.query() //Recuperation de la liste des donnees de maniere dynamique
+   var student = $http('/students/:id.json', {studentId:'@id'}) 
+$scope.students = student.query() 
 });
 
 }]); 
