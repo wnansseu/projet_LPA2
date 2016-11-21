@@ -33,7 +33,7 @@ gem 'vcr', '~> 3.0', '>= 3.0.3'
 
 gem 'forecast_io', '~> 2.0'
 
-# gem 'pg', '~> 0.18.4', group: :production
+gem 'pg', '~> 0.18.4', group: :production
 
 
 gem 'typhoeus', '~> 1.1'
