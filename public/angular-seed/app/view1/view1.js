@@ -11,10 +11,10 @@ angular.module('myApp.view1', ['ngRoute'])
 
 
   .controller('View1Ctrl', ['$scope', '$http', function($scope, $http) {
-    $scope.students = [];
+   
 
-    $http.get('/students.json').success(function(data){
-      $scope.students = data
-  	});
+   var student = $http('/students/:id.json', {studentId:'@id'}) //Creation de la ressource
+$scope.students = student.query() //Recuperation de la liste des donnees de maniere dynamique
+});
 
 }]); 
