@@ -29,6 +29,7 @@ group  :development, :test do
   gem 'sqlite3'
 end
 gem 'nominatim', '~> 0.0.5'
+gem 'vcr', '~> 3.0', '>= 3.0.3'
 
 gem 'forecast_io', '~> 2.0'
 
