@@ -15,6 +15,5 @@ angular.module('myApp.view1', ['ngRoute'])
 
    var student = $http('/students/:id.json', {studentId:'@id'}) 
 $scope.students = student.query() 
-});
 
 }]); 
