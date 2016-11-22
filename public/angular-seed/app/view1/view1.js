@@ -11,9 +11,10 @@ angular.module('myApp.view1', ['ngRoute'])
 
 
   .controller('View1Ctrl', ['$scope', '$http', function($scope, $http) {
-   
+    $scope.students = [];
 
-   var student = $http('/students/:id.json', {studentId:'@id'}) 
-$scope.students = student.query() 
+    $http.get('/students.json').success(function(data){
+      $scope.students = data
+  	});
 
 }]); 
