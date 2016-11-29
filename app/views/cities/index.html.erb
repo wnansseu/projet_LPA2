@@ -1,4 +1,8 @@
-<h1>Listing cities</h1>
+<br />
+<br />
+<br />
+<br />
+<h1 style="color :#646B73; font-family: zerif;margin-left:10px"><span class="glyphicon glyphicon-th-list" style="width=20px;height:20px;font-size : 24px;padding: 0px 8px;"></span>Listing students</h1>
 
 <table>
   <thead>
@@ -6,7 +10,7 @@
       <th>Name</th>
       <th>Lat</th>
       <th>Lon</th>
-      <th colspan="3"></th>
+      <th colspan="3" style ="padding-left:100px;"></th>
     </tr>
   </thead>
 
@@ -16,14 +20,27 @@
         <td><%= city.name %></td>
         <td><%= city.lat %></td>
         <td><%= city.lon %></td>
-        <td><%= link_to 'Show', city %></td>
-        <td><%= link_to 'Edit', edit_city_path(city) %></td>
-        <td><%= link_to 'Destroy', city, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td> 
+           
+           <div class="btn-group">
+  <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Action
+  </button>
+  <div class="dropdown-menu">
+    <li><a href="#"><%= link_to 'Show', city %></a></li>
+    <li><a href="#"><%= link_to 'Edit', edit_city_path(city) %></a></li>
+    <div class="dropdown-divider"></div>
+   <li><a href="#"><%= link_to 'Destroy', city, method: :delete, data: { confirm: 'Are you sure?' } %></a></li>
+  </div>
+</div>
+        
+        </td>
+       
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
+<button type="button" class="btn btn-success"><%= link_to 'New City', new_city_path %></button>
 
-<%= link_to 'New City', new_city_path %>
